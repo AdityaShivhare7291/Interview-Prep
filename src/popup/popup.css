@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.popup_box {
+    width: 500px;
+    max-height: 500px;
+}
+
+.popup_box .pb_header,
+.popup_box .pb_footer {
+    width: 100%;
+}
+
+.popup_box .pb_header {
+    background: linear-gradient(#1b28c4, #1d0f52);
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup_box .pb_footer {
+    background: linear-gradient(to top, #1b28c4, #1d0f52);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+
+.popup_box .pb_content {
+    width: 100%;
+    background: #1b2b79;
+    overflow: hidden;
+}
+
+.pb_header_logo {
+    font-size: 1.2rem;
+    color: #d8f8ff;
+    padding: 0rem 1rem;
+    background: #1b2b79;
+    letter-spacing: 2px;
+}
+
+/* START: Menu Tab CSS */
+
+.menu_tab_cover {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.menu_tab_btn {
+    font-size: 1rem;
+    background: transparent;
+    padding: 0.5rem;
+    color: #b8bbdf;
+}
+
+.menu_tab_btn:hover,
+.active_menu_tab_btn {
+    color: #00fffd !important;
+    cursor: pointer;
+}
+
+/* END: Menu Tab CSS */
+
+
+/* START: Search CSS */
+
+.pb_content .search_box {
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 10px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pb_content .search_input_cover {
+    width: 60%;
+    height: 45px;
+    margin: 0.5rem 0rem;
+    background: #44518f;
+    border: 2px solid #d6f8e2;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pb_content .search_input_cover_ie {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.pb_content .search_box .search_input {
+    width: 80%;
+    background: transparent;
+    padding: 0.5rem;
+    color: #fff;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+}
+
+.pb_content .search_box .search_input_ie {
+    width: 100%;
+}
+
+::placeholder {
+    color: #d6f8e2;
+}
+
+.pb_content .search_box .search_icon {
+    width: 15%;
+    font-size: 1.2rem;
+}
+
+.pb_content .search_box .search_icon_ie {
+    width: 10%;
+}
+
+.saved_btn {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* END: Search CSS End */
+
+.company_list_cover {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.interview_exp_list_cover {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.pb_content .company_list {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.pb_content .company_list .card_item {
+    width: 200px;
+    height: 45px;
+    margin: 0.5rem 0rem;
+    border-radius: 10px;
+    background: #44518f;
+    border: 2px solid #d6f8e2;
+    /* border: none; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.pb_content .company_list .interview_card_item {
+    width: 100%;
+    margin: 0.6rem 0rem;
+    border: none;
+}
+
+.card_item:hover {
+    border: 2px solid #00fffd !important;
+}
+
+.interview_card_item:hover {
+    border: none !important;
+}
+
+.card_item .card_item_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card_item .interview_card_item_content {
+    flex-direction: column;
+}
+
+.card_checkmark_circle {
+    display: block;
+    min-width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+.card_item .card_title {
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card_item .interview_card_title {
+    width: 400px;
+}
+
+.card_item:hover .card_title,
+.selected .card_title {
+    color: #00fffd;
+}
+
+.selected_company {
+    background-color: #00fffd;
+}
+
+.selected {
+    border: 2px solid #00fffd !important;
+}
+
+/* START: Not Found CSS */
+
+.not_found_card {
+    width: 70%;
+    margin: 5rem auto;
+}
+
+.not_found_card .not_found_card_text,
+.error_text {
+    color: #a2b1be;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* END: Not Found CSS */
+
+/* START: Spinner CSS */
+.spinner_card,
+.error_card {
+    margin: 5rem auto;
+}
+
+.spinner {
+    border: 16px solid #44518f;
+    border-top: 16px solid #00fffd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* END: Spinner CSS */
+
+.cm_dashboard_section,
+.cm_companies_section {
+    display: none;
+}
+
+.active_section {
+    display: block !important;
+}
+
+.recent_read_url {
+    font-size: 1rem;
+    color: #a0b7db;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 380px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.recent_read_url:hover {
+    color: #00fffd;
+}
+
+/* START: Footer CSS */
+
+.footer_btn_left_cover {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.footer_btn_left_cover .ds_footer_btn {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    background: transparent;
+    color: #a0b7db;
+    cursor: pointer;
+}
+
+.footer_btn_left_cover .ds_footer_btn:hover {
+    color: #00fffd;
+}
+
+.ds_interview_span {
+    display: block;
+    color: #fff
+}
+
+.ds_footer_select {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.2rem;
+    background: #1b2b79;
+    color: #a0b7db;
+    cursor: pointer;
+}
+
+.footer_btn_left_cover .open_selected_btn,
+.footer_btn_left_cover .reset_btn {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    background: transparent;
+    color: #a0b7db;
+    cursor: pointer;
+}
+
+.footer_btn_left_cover .open_selected_btn:hover,
+.footer_btn_left_cover .reset_btn:hover {
+    color: #00fffd;
+}
+
+.footer_btn_right_cover .cm_settings_btn {
+    background: transparent;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer_btn_right_cover .cm_settings_btn:hover {
+    color: #00fffd;
+}
+
+.cm_buymeacoffee_btn {
+    width: 120px;
+    cursor: pointer;
+}
+
+/* END: Footer CSS */
+
+/* START: Scroll Bar CSS */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b1aacc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5a41b2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1f0777;
+}
+
+/* END: Scroll Bar CSS */

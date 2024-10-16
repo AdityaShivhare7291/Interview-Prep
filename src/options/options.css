@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.options_box {
+    width: 100%;
+    height: 100vh;
+    background: #1b2b79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.options_box .options_box_content {
+    width: 80%;
+    padding: 2rem;
+    background: #44518f;
+    border: 2px solid #d6f8e2;
+    border-color: transparent;
+    border-radius: 2rem;
+    justify-content: space-between;
+}
+
+.options_box .options_box_content .ob_text {
+    color: #fff;
+}
+
+.options_box_content .ob_content_left,
+.options_box_content .ob_content_right {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.ob_cl_left,
+.ob_cl_right {
+    width: 45%;
+}
+
+.cm_settings_heading {
+    color: #00fffd;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #00fffd;
+}
+
+.ob_content_item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+select {
+    outline: none;
+    width: 100px;
+    color: #fff;
+    background: #44518f;
+    padding: 4px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+}
+
+.cm_settings_save_btn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+    outline: none;
+    border: 1px solid #00fffd;
+    border-radius: 10px;
+    color: #00fffd;
+    background: transparent;
+    margin: 0.5rem 0rem 1rem 0rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cm_settings_save_btn:hover {
+    background: #00fffd;
+    color: #000;
+}
+
+.ob_cr_give_stars {
+    font-size: 1rem;
+    background: #b8ff9dea;
+    color: #119b2f;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.ob_a_link {
+    text-decoration: none;
+}
+
+.ob_bug_text,
+.ob_idea_text {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+}
+
+.status {
+    color: #0eff42;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .options_box .options_box_content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .options_box .options_box_content {
+        width: 100%;
+        height: 100%;
+        margin: 0rem auto;
+    }
+
+    .options_box_content .ob_content_left,
+    .options_box_content .ob_content_right {
+        flex-direction: column;
+    }
+
+    .ob_cl_left,
+    .ob_cl_right {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .options_box {
+        height: 100%;
+    }
+}

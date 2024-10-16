@@ -1,0 +1,18 @@
+body {
+    background: #000;
+}
+
+.rightBar,
+.sidebar_wrapper,
+.header-main__wrapper,
+.header-main__slider,
+.article--recommended,
+.article-meta,
+footer {
+    /* visibility: hidden!important; */
+    display: none!important;
+}
+
+.article-page_flex {
+    justify-content: center;
+}

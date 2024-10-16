@@ -1,0 +1,79 @@
+.cm_control_cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    width: 260px;
+    height: 80px;
+    position: fixed;
+    background: #1b2b79;
+    border: 2px solid #00fffd;
+    border-radius: 15px;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1500;
+}
+
+.cm_interview_text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0px!important;
+}
+
+.cm_control_btns_cover {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ds_footer_btn {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding: 5px 5px;
+    background: transparent;
+    color: #a0b7db;
+    cursor: pointer;
+    margin-bottom: 0rem!important;
+}
+
+.ds_footer_btn:hover,
+.ds_footer_select:hover,
+.cm_control_active_state {
+    color: #00fffd;
+}
+
+.ds_interview_span {
+    display: block;
+    color: #fff
+}
+
+.ds_footer_select {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding: 0.2rem;
+    background: #1b2b79;
+    color: #a0b7db;
+    cursor: pointer;
+}
+
+.cm_feature_rtime_focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cm_feature_focus_mode_text {
+    font-size: 15px;
+    font-weight: 500;
+    background: #1b2b79;
+    border-radius: 8px;
+    padding: 8px 15px;
+    transition: all 0.3s;
+}
+
+.active_focus_mode {
+    border: 1px solid #00fffd;
+    color: #00fffd;
+}

@@ -1,0 +1,6 @@
+# directories
+node_modules
+release
+build
+src/utils
+scripts

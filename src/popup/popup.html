@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Matrix</title>
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="popup_box" id="popup-content">
+        <div class="pb_header">
+            <h2 class="pb_header_logo">Career Matrix</h2>
+            <ul class="menu_tab_cover">
+                <li class="menu_tab_btn" data-menuTabName="Tools">Tools</li>
+                <li class="menu_tab_btn active_menu_tab_btn" data-menuTabName="Companies">Companies</li>
+            </ul>
+        </div>
+        <div class="pb_content cm_companies_section active_section">
+            <div class="search_box">
+                <div class="search_input_cover">
+                    <input type="text" name="searchCompany" id="searchCompanyInputId" class="search_input"
+                        placeholder="Search companies..." />
+                    <span class="search_icon">🔎</span>
+                </div>
+            </div>
+            <div class="company_list_cover">
+                <div id="companyListId" class="company_list">
+
+                </div>
+            </div>
+        </div>
+        <div class="pb_content cm_dashboard_section">
+            <div class="search_box">
+                <div class="saved_btn_cover">
+                    <p class="saved_btn">Recent Listen</p>
+                    <div class="footer_btn_left_cover">
+                        <span class="recent_read_url">Nothing's here</span>
+                    </div>
+                </div>
+                <div class="search_input_cover search_input_cover_ie">
+                    <input type="text" name="searchInterviewExp" id="searchInterviewExpInputId" class="search_input search_input_ie"
+                        placeholder="Search interview experiences..." />
+                    <span class="search_icon search_icon_ie">🔎</span>
+                </div>
+            </div>
+            <div class="interview_exp_list_cover">
+                <div id="interviewExpListId" class="company_list">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="cm_companies_section active_section">
+            <div class="pb_footer">
+                <div class="footer_btn_left_cover">
+                    <button type="button" class="reset_btn" id="resetBtnId">Reset</button>
+                    <button type="button" class="open_selected_btn" id="openSelectBtnId">Open (0)</button>
+                </div>
+                <div class="footer_btn_right_cover">
+                    <button type="button" id="cSettingsBtnId" class="cm_settings_btn">⚙</button>
+                </div>
+            </div>
+        </div>
+        <div class="cm_dashboard_section">
+            <div class="pb_footer">
+                <div class="footer_btn_left_cover">
+                    <img class="cm_buymeacoffee_btn" src="../images/buymeacoffee_btn.png"
+                        alt="Buy me a coffee button" />
+                </div>
+                <div class="footer_btn_right_cover">
+                    <button type="button" id="tSettingsBtnId" class="cm_settings_btn">⚙</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

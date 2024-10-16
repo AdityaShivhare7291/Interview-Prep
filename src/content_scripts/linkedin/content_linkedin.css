@@ -1,0 +1,98 @@
+.feed-shared-update-v2__description-wrapper {
+    transition: all 0.3s;
+}
+
+.feed-shared-update-v2__description-wrapper:hover {
+    background: #c9fffd;
+    color: #000;
+}
+
+.feed-shared-update-v2__description-wrapper:focus,
+.update-components-text:focus,
+.feed-shared-inline-show-more-text:focus {
+    outline: none!important;
+}
+    
+ 
+/* Listen post controls css start */
+
+.cm_control_cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 200px;
+    height: 120px;
+    position: fixed;
+    background: #1b2b79;
+    border: 2px solid #00fffd;
+    border-radius: 15px;
+    bottom: 2%;
+    left: 2%;
+    z-index: 1500;
+}
+
+
+.cm_interview_text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 0px!important;
+}
+
+.cm_control_btns_cover {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ds_footer_btn {
+    outline: none!important;
+    border: none!important;
+    font-size: 14px!important;
+    padding: 4px;
+    background: transparent;
+    color: #a0b7db;
+    cursor: pointer;
+    margin-bottom: 0rem!important;
+}
+.ds_footer_btn:focus,
+.ds_footer_btn:hover {
+    outline: none;
+    border: none;
+}
+
+.ds_footer_btn:hover,
+.ds_footer_select:hover,
+.cm_control_active_state {
+    color: #00fffd;
+}
+
+.ds_interview_span {
+    display: block;
+    color: #fff
+}
+
+.ds_footer_select {
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+    width: 40px;
+    font-size: 14px;
+    padding: 0.2rem;
+    background: #1b2b79!important;
+    color: #a0b7db;
+    cursor: pointer;
+}
+
+.cm_listen_post_voice_select {
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+    width: 110px;
+    font-size: 14px;
+    padding: 0.2rem;
+    background: #1b2b79!important;
+    color: #a0b7db;
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
